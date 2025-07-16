@@ -68,17 +68,17 @@
 
   <div class="certificado-item">
     <p><strong>Semana de Python (2025)</strong></p>
-    <a href="Certificado-gabriel-elias-bolivar-lopez.pdf" target="_blank" class="btn-certificado">Ver Certificado PDF</a>
+    <a href="certificado_semana_python.pdf" target="_blank" class="btn-certificado">Ver Certificado PDF</a>
   </div>
 
   <div class="certificado-item">
     <p><strong>Conversatoria de introduccion a la Ciberseguridad (2025)</strong></p>
-    <a href="certificate.pdf" target="_blank" class="btn-certificado">Ver Certificado PDF</a>
+    <a href="certificado_introduccion_a_la_ciberseguridad.pdf" target="_blank" class="btn-certificado">Ver Certificado PDF</a>
   </div>
 
    <div class="certificado-item">
     <p><strong>Taller de NMAP: tu radar de redes (2025)</strong></p>
-    <a href="certificate (1).pdf" target="_blank" class="btn-certificado">Ver Certificado PDF</a>
+    <a href="certificado_taller_nmap.pdf" target="_blank" class="btn-certificado">Ver Certificado PDF</a>
   </div>
 </section>
     </main>
@@ -103,6 +103,12 @@
       document.getElementById('vista-certificado').style.display = 'none';
       document.getElementById('imagen-certificado').src = '';
     }
+    document.addEventListener("keydown", e => {
+      if (e.key === "F12") {
+        alert("Inspección de elementos deshabilitada por seguridad.");
+        e.preventDefault();   
+      }
+    })
   </script>
 </body>
 </html>
