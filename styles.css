@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 60px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+  background-color: #263238;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.main-content {
+  background: #fff;
+  padding: 30px;
+  width: 100%;
+}
+
+.dark-mode .main-content {
+  background: #1e1e1e;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  border-bottom: 2px solid #1976d2;
+  color: #1976d2;
+  margin-bottom: 10px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  list-style: none;
+}
+.skills li {
+  background: #e3f2fd;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.dark-mode .skills li {
+  background: #3949ab;
+  color: #fff;
+}
+
+.contact {
+  align-items: start;
+  list-style: none;
+  margin-top: 10px;
+}
+
+#modo-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background: #1976d2;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#certificados .certificado-item {
+  background: #a19e9e;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #1976d2;
+  border-radius: 5px;
+}
+
+#certificados button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#vista-certificado {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#vista-certificado img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    width: 30%;
+  }
+  .main-content {
+    width: 70%;
+  }
+}
+.btn-certificado {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #1976d2;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.btn-certificado:hover {
+  background-color: #0d47a1;
+}
+.enlace {
+  text-decoration: none;
+  color: white;
+}
