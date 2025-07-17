@@ -26,7 +26,7 @@
         <br>
         <li><i class="bi bi-facebook"></i>  Facebook: <br><a class="enlace" href="https://www.facebook.com/gabriel.bolivar.773/">Ver Perfil</a></li>
         <br>
-        <li><i class="bi bi-envelope"></i>  Gmail: <br>gabrieliasbolivar@gmail.com</li>
+        <li><i class="bi bi-envelope"></i>  Gmail: <br><a class="enlace" href="mailto:gabrieliasbolivar@gmail.com">Enviar correo</a></li>
         <br>
         <li><i class="bi bi-github"></i>  Github: <br><a class="enlace" href="https://github.com/Gabriel23BL">Ver Repositorio</a></li>
       </ul>
@@ -102,6 +102,8 @@
       document.getElementById('vista-certificado').style.display = 'none';
       document.getElementById('imagen-certificado').src = '';
     }
+
+    // Deshabilitar F12
     document.addEventListener("keydown", e => {
       if (e.key === "F12") {
         alert("Inspección de elementos deshabilitada por seguridad.");
