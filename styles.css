@@ -9,18 +9,23 @@ body {
   transition: all 0.3s ease;
 }
 
+
+/* Dark Mode Styles */
 .dark-mode {
   background: #121212;
   color: #eee;
 }
 
+
+/* Container Styles */
 .container {
   display: flex;
   flex-wrap: wrap;
   max-width: 960px;
   border-radius: 10px;
   margin: 60px auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .sidebar {
@@ -33,7 +38,7 @@ body {
 }
 
 .main-content {
-  background: #fff;
+  
   padding: 30px;
   border-radius: 10px;
   width: 100%;
@@ -52,6 +57,8 @@ body {
   margin-bottom: 15px;
 }
 
+
+/* Header Styles */
 .section {
   margin-bottom: 30px;
 }
@@ -62,30 +69,60 @@ body {
   margin-bottom: 10px;
 }
 
+/*Skills Section Styles*/
+.section {
+  margin-top: 10px;
+  max-width: 800px;  
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+        
 .skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
+
 .skills li {
-  background: #e3f2fd;
-  padding: 5px 10px;
-  border-radius: 5px;
-  text-align: center;
+  background-color: #edf2f7;
+  color: #2d3748;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
+.skills li:hover {
+  background-color: #4299e1;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(66, 153, 225, 0.3);
+}
+
+/* Dark Mode Skills Styles */
 .dark-mode .skills li {
   background: #3949ab;
   color: #fff;
 }
 
+/* Contact Section Styles */
 .contact {
-  align-items: center;
-  list-style: none;
-  margin-top: 10px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    padding: 0; 
+    margin: 0; 
+    list-style: none;
 }
-
+.contact li {
+    text-align: center;
+    margin: 10px 0; 
+}
 #modo-toggle {
   position: fixed;
   top: 15px;
@@ -99,6 +136,8 @@ body {
   z-index: 1000;
 }
 
+
+/* Certificates Section Styles */
 #certificados .certificado-item {
   background: #a19e9e;
   padding: 15px;
@@ -131,16 +170,6 @@ body {
   margin-bottom: 10px;
 }
 
-
-
-@media screen and (min-width: 768px) {
-  .sidebar {
-    width: 30%;
-  }
-  .main-content {
-    width: 70%;
-  }
-}
 .btn-certificado {
   display: inline-block;
   margin-top: 10px;
@@ -158,4 +187,28 @@ body {
 .enlace {
   text-decoration: none;
   color: white;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    width: 30%;
+  }
+
+  .main-content {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills {
+    justify-content: center;
+  }
+            
+  .skills li {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
 }
